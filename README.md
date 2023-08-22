@@ -1,4 +1,4 @@
 # SA-Team-Lead
 
-## Группы
-- [SA-Team-Lead-2023-05](https://github.com/OtusTeam/SA-Team-Lead/tree/SA-Team-Lead.2023-05)
+## Занятия
+- [Урок 22. Сам себе разработчик (понимать код, отлаживать и пилить мини-фичи)](lessons/lesson.22/)
