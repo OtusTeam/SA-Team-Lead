@@ -1,0 +1,58 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block meta_og_title %}خدمات کد هاب برای توسعه دهندگان{% endblock %}
+
+{% block meta_description %}ما علاوه بر تمام خدماتی که در اختیار شما قرار دادیم، یک سرویس Rest API هم برای توسعه دهندگان
+و برنامه نویس ها ایجاد
+کردیم تا به راحتی از خدمات کد هاب، روی هر پلتفورمی استفاده کنند و اپلیکیشن های خودشون رو توسعه بدن.{% endblock %}
+
+{% block meta_og_description %}ما علاوه بر تمام خدماتی که در اختیار شما قرار دادیم، یک سرویس Rest API هم برای توسعه
+دهندگان و برنامه نویس ها ایجاد
+کردیم تا به راحتی از خدمات کد هاب، روی هر پلتفورمی استفاده کنند و اپلیکیشن های خودشون رو توسعه بدن.{% endblock %}
+
+{% block meta_og_url %}{% url 'development' %}{% endblock %}
+
+{% block meta_tw_title %}خدمات کد هاب برای توسعه دهندگان{% endblock %}
+
+{% block meta_tw_description %}ما علاوه بر تمام خدماتی که در اختیار شما قرار دادیم، یک سرویس Rest API هم برای توسعه
+دهندگان و برنامه نویس ها ایجاد
+کردیم تا به راحتی از خدمات کد هاب، روی هر پلتفورمی استفاده کنند و اپلیکیشن های خودشون رو توسعه بدن.{% endblock %}
+
+{% block meta_tw_url %}{% url 'development' %}{% endblock %}
+
+{% block development_active %}active{% endblock %}
+{% block title %}کد هاب برای توسعه دهندگان{% endblock %}
+
+{% block carousel_image %}{% static 'img/development-banner.png' %}{% endblock %}
+
+{% block content %}
+<h4>کد هاب برای توسعه دهندگان</h4>
+<p>
+    ما علاوه بر تمام خدماتی که در اختیار شما قرار دادیم، یک سرویس Rest API هم برای توسعه دهندگان و برنامه نویس ها ایجاد
+    کردیم تا به راحتی از خدمات کد هاب، روی هر پلتفورمی استفاده کنند و اپلیکیشن های خودشون رو توسعه بدن. از لیست زیر،
+    داکیومنت مورد نظر خودتون رو بررسی کنید.
+</p><br>
+
+<div class="list-group" dir="ltr">
+    <a href="{% url 'api_docs_v1' %}" class="list-group-item list-group-item-action active">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1 p-2">CodeHub RESTful API Service Documentation - ReDoc</h5>
+            <small>نسخه ۱.۰</small>
+        </div>
+        <p class="mb-1 p-2">Codehub provides users/devs multiple RESTful API services. This RESTful service allows
+            developers to work with CodeHub Web Services on any platform and machine. Make sure you follow the
+            documentation and observe all conditions and requirements.</p>
+    </a>
+
+    <a href="{% url 'api_docs_v1' %}" class="list-group-item list-group-item-action disabled">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1 p-2">CodeHub RESTful API Service Documentation - ReDoc</h5>
+            <small>نسخه ۲.۰</small>
+        </div>
+        <p class="mb-1 p-2">Codehub provides users/devs multiple RESTful API services. This RESTful service allows
+            developers to work with CodeHub Web Services on any platform and machine. Make sure you follow the
+            documentation and observe all conditions and requirements.</p>
+    </a>
+</div>
+{% endblock %}

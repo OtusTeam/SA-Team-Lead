@@ -1,0 +1,8 @@
+version: "1"
+rules:
+- base: master
+  upstream: spotify-web-api-java:master
+  mergeMethod: hardreset
+- base: develop
+  upstream: spotify-web-api-java:develop
+  mergeMethod: hardreset
