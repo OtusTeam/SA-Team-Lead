@@ -11,12 +11,12 @@ class loto_utils():
     def generate_unique_numbers(count, minbound, maxbound):
         if count > maxbound - minbound + 1:
             raise ValueError('Incorrect input parameters')
-        unique_numbers = []
-        while len(unique_numbers) < count:
+        ret = []
+        while len(ret) < count:
             new = r.randint(minbound, maxbound)
-            if new not in unique_numbers:
-                unique_numbers.append(new)
-        return unique_numbers
+            if new not in ret:
+                ret.append(new)
+        return ret
 
 class Cards:
     __rows = 3
@@ -127,6 +127,7 @@ class Game:
                 return 2
 
         return 0
+
 
 if __name__ == '__main__':
     game = Game()

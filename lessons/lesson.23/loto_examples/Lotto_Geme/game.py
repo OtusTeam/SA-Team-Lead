@@ -3,6 +3,7 @@ import random
 import time
 from keg import BagKegs
 
+
 def game():
 
     user = Card((input('         ***Начнем игру***\n'

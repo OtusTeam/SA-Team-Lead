@@ -3,8 +3,6 @@ from models.card import Card
 from models.player import create_player
 
 
-
-
 def is_continue_game(players):
     for item in players:
         if not (item.is_winner is None):
