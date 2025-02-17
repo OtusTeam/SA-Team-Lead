@@ -30,3 +30,14 @@ public class Car {
         System.out.println("Current speed after braking: " + myCar.speed + " mph");
     }
 }
+
+
+// class Ferrari(Car):
+//
+//     public void nitro() {
+//         this.speed += 100
+//     }
+//
+// f = Ferrari()
+//
+// f.speed
