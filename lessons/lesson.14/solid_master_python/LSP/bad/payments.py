@@ -2,6 +2,9 @@ class PaymentMethod:
     def process_payment(self, amount):
         raise NotImplementedError("This method should be overridden in subclasses")
 
+    def refund_payment(self, amount):
+        raise NotImplementedError("Refund is not supported for PayPal payments")
+
 class CreditCardPayment(PaymentMethod):
     def process_payment(self, amount):
         print(f"Processing credit card payment of ${amount}")
