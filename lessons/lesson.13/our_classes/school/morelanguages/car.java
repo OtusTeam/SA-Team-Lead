@@ -1,5 +1,5 @@
 public class Car {
-    private String make;
+    String make;
     String model;
     int year;
     int speed;
@@ -11,18 +11,16 @@ public class Car {
         this.speed = 0;
     }
 
-    private void accelerate(int increment) {
+    public void accelerate(int increment) {
         this.speed += increment;
     }
 
     public void brake(int decrement) {
-        this.accelerate
         this.speed -= decrement;
     }
 
     public static void main(String[] args) {
         Car myCar = new Car("Toyota", "Corolla", 2023);
-        myCar.make = 10
         System.out.println("My car: " + myCar.year + " " + myCar.make + " " + myCar.model);
 
         myCar.accelerate(20);
