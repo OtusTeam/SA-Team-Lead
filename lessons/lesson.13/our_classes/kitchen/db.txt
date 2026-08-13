@@ -1,0 +1,1 @@
+{"strength": ["high"], "brand": ["USA Brand"]}
