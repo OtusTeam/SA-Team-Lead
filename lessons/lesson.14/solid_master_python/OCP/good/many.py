@@ -3,35 +3,35 @@ import string
 from abc import ABC, abstractmethod
 
 
-class DebitoConta(ABC):
+class AccountDebit(ABC):
     def __init__(self):
-        self.numero_transacao = ""
+        self.transaction_number = ""
 
     @abstractmethod
-    def debitar(self, valor: float, conta: str) -> str:
+    def debit(self, amount: float, account: str) -> str:
         pass
 
-    def formatar_transacao(self) -> str:
+    def generate_transaction_number(self) -> str:
         chars = string.ascii_uppercase + string.digits
-        self.numero_transacao = "".join(random.choices(chars, k=15))
-        return self.numero_transacao
+        self.transaction_number = "".join(random.choices(chars, k=15))
+        return self.transaction_number
 
 
-class DebitoContaCorrente(DebitoConta):
-    def debitar(self, valor: float, conta: str) -> str:
-        # Debita Conta Corrente
-        return self.formatar_transacao()
+class CheckingAccountDebit(AccountDebit):
+    def debit(self, amount: float, account: str) -> str:
+        # Debit checking account
+        return self.generate_transaction_number()
 
 
-class DebitoContaInvestimento(DebitoConta):
-    def debitar(self, valor: float, conta: str) -> str:
-        # Debita Conta Investimento
-        # Isentar Taxas
-        return self.formatar_transacao()
+class InvestmentAccountDebit(AccountDebit):
+    def debit(self, amount: float, account: str) -> str:
+        # Debit investment account
+        # Apply tax exemption rules
+        return self.generate_transaction_number()
 
 
-class DebitoContaPoupanca(DebitoConta):
-    def debitar(self, valor: float, conta: str) -> str:
-        # Valida Aniversário da Conta
-        # Debita Conta Poupança
-        return self.formatar_transacao()
+class SavingsAccountDebit(AccountDebit):
+    def debit(self, amount: float, account: str) -> str:
+        # Validate account anniversary date
+        # Debit savings account
+        return self.generate_transaction_number()
